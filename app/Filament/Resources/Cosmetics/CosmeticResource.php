@@ -5,6 +5,7 @@ namespace App\Filament\Resources\Cosmetics;
 use App\Filament\Resources\Cosmetics\Pages\CreateCosmetic;
 use App\Filament\Resources\Cosmetics\Pages\EditCosmetic;
 use App\Filament\Resources\Cosmetics\Pages\ListCosmetics;
+use App\Filament\Resources\Cosmetics\RelationManagers\TestimonialsRelationManager;
 use App\Filament\Resources\Cosmetics\Schemas\CosmeticForm;
 use App\Filament\Resources\Cosmetics\Tables\CosmeticsTable;
 use App\Models\Cosmetic;
@@ -36,6 +37,7 @@ class CosmeticResource extends Resource
     {
         return [
             //
+            TestimonialsRelationManager::class,
         ];
     }
 
