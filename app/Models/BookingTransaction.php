@@ -36,7 +36,7 @@ class BookingTransaction extends Model
         return $randomString;
     }
 
-    public function transaction_details() : HasMany {
+    public function transactionDetails() : HasMany {
         return $this->hasMany(TransactionDetails::class);
     }
 }
