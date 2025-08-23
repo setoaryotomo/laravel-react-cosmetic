@@ -12,6 +12,7 @@ class CosmeticPhoto extends Model
 
     protected $fillable = [
         'name',
+        'photo',
         'cosmetic_id',
     ];
 
